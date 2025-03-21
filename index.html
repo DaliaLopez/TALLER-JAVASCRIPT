@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Formulario de Datos Personales</h1>
+    <form id="formulario">
+        <!-- Campo para el op1 -->
+        <input type="number" id="op1" placeholder="Operador 1" required>
+
+        <!-- Campo para el operador númerico-->
+        <input type="text" id="operador" placeholder="+, -, *, /" required>
+
+        <!-- Campo para la fecha de nacimiento -->
+        <input type="number" id="op2" placeholder="Operador 2" required>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" id="calcular">Calcular</button>
+    </form>
+
+    <!-- Área para mostrar el resultado -->
+    <div class="resultado" id="resultado"></div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
