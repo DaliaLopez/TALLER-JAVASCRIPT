@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Datos Personales</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-    <h1>Formulario de Datos Personales</h1>
-    <form id="formulario">
-        <!-- Campo para el op1 -->
-        <input type="number" id="op1" placeholder="Operador 1" required>
-
-        <!-- Campo para el operador númerico-->
-        <input type="text" id="operador" placeholder="+, -, *, /" required>
-
-        <!-- Campo para la fecha de nacimiento -->
-        <input type="number" id="op2" placeholder="Operador 2" required>
-
-        <!-- Botón para enviar el formulario -->
-        <button type="submit" id="calcular">Calcular</button>
-    </form>
-
-    <!-- Área para mostrar el resultado -->
-    <div class="resultado" id="resultado"></div>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <div class="input-group">
+            <label for="op1">Primer operando:</label>
+            <input type="number" id="op1" placeholder="Ingrese el primer número">
+        </div>
+        <div class="input-group">
+            <label for="operador">Operador:</label>
+            <input type="text" id="operador" placeholder="Ingrese el operador (+, -, *, /, **, %)">
+        </div>
+        <div class="input-group">
+            <label for="op2">Segundo operando:</label>
+            <input type="number" id="op2" placeholder="Ingrese el segundo número">
+        </div>
+        <button id="calcular">Calcular</button>
+        <div id="resultado">El resultado se mostrará aquí</div>
+        <div class="operador-info">
+            <p>Operadores permitidos:</p>
+            <ul>
+                <li><strong>+</strong>: Suma</li>
+                <li><strong>-</strong>: Resta</li>
+                <li><strong>*</strong>: Multiplicación</li>
+                <li><strong>/</strong>: División</li>
+                <li><strong>**</strong>: Exponenciación</li>
+                <li><strong>%</strong>: Módulo</li>
+            </ul>
+        </div>
+    </div>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>
